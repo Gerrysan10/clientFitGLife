@@ -42,7 +42,7 @@ const exerciseRoutines: ExerciseRoutine[] = [
 
 export const getProgressBody = async (userId: string): Promise<BodyMeasurement[]> => {
   try {
-    const response = await fetch(`https://backend-fit-glife.vercel.app/user/${userId}/progress-body`);
+    const response = await fetch(`http://localhost:4000/user/${userId}/progress-body`);
     if (!response.ok) {
       throw new Error('Error fetching progress body measurements');
     }
@@ -57,7 +57,7 @@ export const getProgressBody = async (userId: string): Promise<BodyMeasurement[]
 
 export const getProgressRoutines = async (userId: string): Promise<ExerciseRoutine[]> => {
   try {
-    const response = await fetch(`https://backend-fit-glife.vercel.app/user/${userId}/progress-routines`);
+    const response = await fetch(`http://localhost:4000/user/${userId}/progress-routines`);
     if (!response.ok) {
       throw new Error('Error fetching progress routines');
     }
@@ -73,7 +73,7 @@ export const getProgressRoutines = async (userId: string): Promise<ExerciseRouti
 export const addProgressBody = async (userId: string): Promise<void> => {
   for (let index = 0; index < bodyMeasurements.length; index++) {
     try {
-      const response = await fetch(`https://backend-fit-glife.vercel.app/user/${userId}/progress-body`, {
+      const response = await fetch(`http://localhost:4000/user/${userId}/progress-body`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
@@ -94,7 +94,7 @@ export const addProgressBody = async (userId: string): Promise<void> => {
 export const addProgressRoutines = async (userId: string): Promise<void> => {
   for (let index = 0; index < exerciseRoutines.length; index++) {
     try {
-      const response = await fetch(`https://backend-fit-glife.vercel.app/user/${userId}/progress-routines`, {
+      const response = await fetch(`http://localhost:4000/user/${userId}/progress-routines`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'

@@ -5,9 +5,8 @@ Para instalar y ejecutar el proyecto, sigue estos pasos:
 1. **Clonar el repositorio:** Clona el repositorio del proyecto desde GitHub utilizando el siguiente comando en tu terminal:
 
     ```bash
-    git clone <url_del_repositorio>
+    git clone https://github.com/Gerrysan10/clientFitGLife.git
     ```
-    Reemplaza <url_del_repositorio> con la URL real del repositorio.
 
 2. **Instalar dependencias**: Ve al directorio del proyecto clonado y navega hasta el directorio client, donde se encuentra el código fuente del cliente de la aplicación. Luego, ejecuta el siguiente comando para instalar todas las dependencias necesarias:
     ```bash
