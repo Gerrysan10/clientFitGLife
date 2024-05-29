@@ -1,4 +1,4 @@
-## Instrucciones de Instalación y Ejecución del Proyecto
+## Instrucciones de Instalación y Ejecución del Proyecto (FrontEnd)
 
 Para instalar y ejecutar el proyecto, sigue estos pasos:
 
@@ -10,7 +10,26 @@ Para instalar y ejecutar el proyecto, sigue estos pasos:
 
 2. **Instalar dependencias**: Ve al directorio del proyecto clonado y navega hasta el directorio client, donde se encuentra el código fuente del cliente de la aplicación. Luego, ejecuta el siguiente comando para instalar todas las dependencias necesarias:
     ```bash
-    cd Fitglifeweb/client
+    cd clientFitGLife/client
+        npm install
+    ```
+ 3. **Ejecutar la aplicación**: Una vez que hayas instalado todas las dependencias, puedes ejecutar la aplicación utilizando el siguiente comando:
+    ```bash
+    npm run dev
+    ```
+## Instrucciones de Instalación y Ejecución del Proyecto (BackEnd)
+
+Para instalar y ejecutar el proyecto, sigue estos pasos:
+
+1. **Clonar el repositorio:** Clona el repositorio del proyecto desde GitHub utilizando el siguiente comando en tu terminal:
+
+    ```bash
+    git clone https://github.com/Gerrysan10/BackendFitGlife.git
+    ```
+
+2. **Instalar dependencias**: Ve al directorio del proyecto clonado y navega hasta el directorio client, donde se encuentra el código fuente del cliente de la aplicación. Luego, ejecuta el siguiente comando para instalar todas las dependencias necesarias:
+    ```bash
+    cd BackendFitGlife/backend
         npm install
     ```
  3. **Ejecutar la aplicación**: Una vez que hayas instalado todas las dependencias, puedes ejecutar la aplicación utilizando el siguiente comando:
